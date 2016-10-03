@@ -16,6 +16,8 @@
 ## 動作環境
 * windows7以上、或いはOS X
 * Unity5.3.5以上
+* Android 4.4 - 7.x
+* IOS 10
 
 ※上記内容で動作確認をしています。
 
@@ -39,7 +41,7 @@
 
 ### 3. Unityでアプリを起動
 
-* ダウンロードしたフォルダを解凍し、Unityから開いてください。その後、blackboardシーンを開いてください。
+* ダウンロードしたフォルダを解凍し、Unityから開いてください。その後、blackboardシーンをダブルクリックして開いてください （シーンに関連オブジェクトが見えない場合は<a href="#ds1">こちら</a>をご覧ください）。
 
 
 ### 4. APIキーの設定
@@ -187,6 +189,11 @@ public void saveImage () {
 		Resources.UnloadUnusedAssets(); 
 	}
 `````
+
+##トラブルシューティング
+<ul><li id="ds1">Unityから開いた後、blackboardシーンに関連オブジェクトが見えない場合<br/>
+「Projectビュー」から「blackboard」を ダブルクリックすると、関連オブジェクトがHierarchyビューで見ることができます。
+</li></ul>
 
 ## 参考
 * ニフティクラウドmobile backend の[ドキュメント（ファイルストア）](http://mb.cloud.nifty.com/doc/current/filestore/basic_usage_unity.html)
