@@ -3,10 +3,10 @@
 <img src="readme-img/illustration.png" width="1000px"/>
 
 ## 概要
-* [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)の『ファイルストア機能』を利用してUnityのサンプルププロジェクトです
-* 簡単な操作ですぐに [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)の機能を体験いただけます★☆
+* [ニフクラmobile backend](http://mb.cloud.nifty.com/)の『ファイルストア機能』を利用してUnityのサンプルププロジェクトです
+* 簡単な操作ですぐに [ニフクラmobile backend](http://mb.cloud.nifty.com/)の機能を体験いただけます★☆
 
-## ニフティクラウドmobile backendって何？？
+## ニフクラmobile backendって何？？
 スマートフォンアプリのバックエンド機能（プッシュ通知・データストア・会員管理・ファイルストア・SNS連携・位置情報検索・スクリプト）が**開発不要**、しかも基本**無料**(注1)で使えるクラウドサービス！今回はデータストアを体験します
 
 注1：詳しくは[こちら](http://mb.cloud.nifty.com/price.htm)をご覧ください
@@ -24,7 +24,7 @@
 
 ## 手順
 ###『STEP 1』準備＆アプリ起動
-### 1. [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)の会員登録とログイン→アプリ作成
+### 1. [ニフクラmobile backend](http://mb.cloud.nifty.com/)の会員登録とログイン→アプリ作成
 
 * 上記リンクから会員登録（無料）をします。登録ができたらログインをすると下図のように「アプリの新規作成」画面が出るのでアプリを作成します
 
@@ -47,7 +47,7 @@
 ### 4. APIキーの設定
 
 * blackboardシーンの`NCMBSettings`を編集します
-* 先程[ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)のダッシュボード上で確認したAPIキーを貼り付けます
+* 先程[ニフクラmobile backend](http://mb.cloud.nifty.com/)のダッシュボード上で確認したAPIキーを貼り付けます
 
 ![画像07](/readme-img/ApiKey.png)
 
@@ -67,13 +67,13 @@
 
 ---------
 * ダッシュボードも確認しましょう！
-  1. ニフティクラウドmobile backendの<a href="https://console.mb.cloud.nifty.com">ダッシュボード</a>で、左の「ファイルストア」をクリックして下さい。
+  1. ニフクラmobile backendの<a href="https://console.mb.cloud.nifty.com">ダッシュボード</a>で、左の「ファイルストア」をクリックして下さい。
   2. 先ほど描いた絵の画像ファイルが保存されていることが確認できます。
 ![画像14](readme-img/03filestore.png)
 
 ##機能解説
 ### SDKのインポートと初期設定
-* ニフティクラウドmobile backend の[ドキュメント（クイックスタート）](http://mb.cloud.nifty.com/doc/current/introduction/quickstart_unity.html)をUnity版に書き換えたドキュメントをご用意していますので、ご活用ください。
+* ニフクラmobile backend の[ドキュメント（クイックスタート）](http://mb.cloud.nifty.com/doc/current/introduction/quickstart_unity.html)をUnity版に書き換えたドキュメントをご用意していますので、ご活用ください。
 
 ### コード解説
 プロジェクトのコードファイルは以下の5つになります。これから、`「SaveImage.cs」`と`「LoadImage.cs」`について解説します。
@@ -196,7 +196,7 @@ public void saveImage () {
 </li></ul>
 
 ## 参考
-* ニフティクラウドmobile backend の[ドキュメント（ファイルストア）](http://mb.cloud.nifty.com/doc/current/filestore/basic_usage_unity.html)
+* ニフクラmobile backend の[ドキュメント（ファイルストア）](http://mb.cloud.nifty.com/doc/current/filestore/basic_usage_unity.html)
 * このアプリを基にした落書きゲーム[「Doodle」](https://github.com/ellentby/Doodle-DrawTogether)
 * このアプリで使用した素材：<br/>
 画像　https://www.w3.org/2016/Talks/W3CTrack-IH/
