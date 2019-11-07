@@ -14,10 +14,10 @@
 ![画像2](https://github.com/natsumo/SwiftLoginApp/blob/master/readme-img/002.png)
 
 ## 動作環境
-* windows7以上、或いはOS X
-* Unity5.3.5以上
-* Android 4.4 - 7.x
-* IOS 9
+* MacOS Mojave v10.14.6 (18G103)
+* Android studio: 3.4.1
+* Simulator: Pixel 2 Android OS Version 10
+* Unity 2019.1.14f1
 
 ※上記内容で動作確認をしています。
 
