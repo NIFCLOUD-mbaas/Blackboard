@@ -67,7 +67,7 @@
 
 ---------
 * ダッシュボードも確認しましょう！
-  1. ニフクラmobile backendの<a href="https://console.mb.cloud.nifty.com">ダッシュボード</a>で、左の「ファイルストア」をクリックして下さい。
+  1. ニフクラmobile backendの<a href="https://console.mbaas.nifcloud.com">ダッシュボード</a>で、左の「ファイルストア」をクリックして下さい。
   2. 先ほど描いた絵の画像ファイルが保存されていることが確認できます。
 ![画像14](readme-img/03filestore.png)
 
