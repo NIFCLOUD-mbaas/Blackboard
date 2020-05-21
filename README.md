@@ -9,21 +9,21 @@
 ## ニフクラmobile backendって何？？
 スマートフォンアプリのバックエンド機能（プッシュ通知・データストア・会員管理・ファイルストア・SNS連携・位置情報検索・スクリプト）が**開発不要**、しかも基本**無料**(注1)で使えるクラウドサービス！今回はデータストアを体験します
 
-注1：詳しくは[こちら](https://mbaas.nifcloud.com/price.htm)をご覧ください
+注1：詳しくは[こちら](https://mbaas.nifcloud.com/about.htm)をご覧ください
 
 ![画像2](https://github.com/natsumo/SwiftLoginApp/blob/master/readme-img/002.png)
 
 ## 動作環境
-* windows7以上、或いはOS X
-* Unity5.3.5以上
-* Android 4.4 - 7.x
-* IOS 9
+* MacOS Mojave v10.14.6 (18G103)
+* Android studio: 3.4.1
+* Simulator: Pixel 2 Android OS Version 10
+* Unity 2019.2.17f1
 
 ※上記内容で動作確認をしています。
 
 
 ## 手順
-###『STEP 1』準備＆アプリ起動
+### 『STEP 1』準備＆アプリ起動
 ### 1. [ニフクラmobile backend](https://mbaas.nifcloud.com/)の会員登録とログイン→アプリ作成
 
 * 上記リンクから会員登録（無料）をします。登録ができたらログインをすると下図のように「アプリの新規作成」画面が出るのでアプリを作成します
@@ -35,7 +35,7 @@
 
 ![画像4](/readme-img/004.png)
 
-### 2. GitHubからサンプルプロジェクトの<a href="https://github.com/ellentby/Blackboard/archive/master.zip">ダウンロード</a>
+### 2. GitHubからサンプルプロジェクトの<a href="https://github.com/NIFCLOUD-mbaas/Blackboard/archive/master.zip">ダウンロード</a>
 
 * 上記のリンクをクリックして、プロジェクトをダウンロードして下さい。
 
@@ -57,9 +57,9 @@
 * Unity画面で上部真ん中の実行ボタン（さんかくの再生マーク）をクリックして、次の画面が出たら、成功です！
 
 <img src="readme-img/blackboard-empty.png" width=600px>
-
 <br/>
-###『STEP 2』アプリ操作　＆　動作確認
+
+### 『STEP 2』アプリ操作　＆　動作確認
 * ブラックボードに適当な絵や文字を描いて、「Save」ボタンをクリックして下さい。
 <img src="readme-img/01draw.png" width="700px"/>
 * セーブが完了したら、ブラックボードは初期化されます。「Gallery」をクリックすると、先ほど描いた絵を確認できます。
@@ -71,7 +71,7 @@
   2. 先ほど描いた絵の画像ファイルが保存されていることが確認できます。
 ![画像14](readme-img/03filestore.png)
 
-##機能解説
+## 機能解説
 ### SDKのインポートと初期設定
 * ニフクラmobile backend の[ドキュメント（クイックスタート）](https://mbaas.nifcloud.com/doc/current/introduction/quickstart_unity.html)をUnity版に書き換えたドキュメントをご用意していますので、ご活用ください。
 
@@ -85,8 +85,8 @@
 ``````````SaveImage.cs            描いた絵をスクリーンショットで取得し、クラウドに保存する
 ``````````LoadImage.cs            クラウドで保存された最新の四枚の画像を取得し、展示する
 `````````
-###「SaveImage.cs」
-####画像を取得し、クラウドに保存
+### 「SaveImage.cs」
+#### 画像を取得し、クラウドに保存
 * <a href="https://docs.unity3d.com/ScriptReference/Texture2D.ReadPixels.html">Texture2D.ReadPixels()</a>関数を使って、変数「camera」（シーンのMainCamera）が撮った画面をbyte[]タイプのスクリーンショットで取得する処理：
 ``````cs
 public Camera camera;
@@ -132,8 +132,8 @@ public void saveImage () {
 	}
 ``````
 
-###「LoadImage.cs」
-####クラウドから画像を取得し、スクリーンで表示
+### 「LoadImage.cs」
+#### クラウドから画像を取得し、スクリーンで表示
 
 * シーン「gallery」に4つのImage Gameobjectを用意します。クラウドから取得した画像は、この4つのGameobjectで表示しています。
 
@@ -190,7 +190,7 @@ public void saveImage () {
 	}
 `````
 
-##トラブルシューティング
+## トラブルシューティング
 <ul><li id="ds1">Unityから開いた後、blackboardシーンに関連オブジェクトが見えない場合<br/>
 「Projectビュー」から「blackboard」を ダブルクリックすると、関連オブジェクトがHierarchyビューで見ることができます。
 </li></ul>
