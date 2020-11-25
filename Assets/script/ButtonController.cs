@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+#if UNITY_2019_3_OR_NEWER
+using UnityEngine.SceneManagement;
+#endif
 
 public class ButtonController : MonoBehaviour {
 
@@ -17,10 +20,18 @@ public class ButtonController : MonoBehaviour {
 		GetComponent<SaveImage> ().saveImage ();
 	}
 	public void OnGallery(){
-		Application.LoadLevel ("gallery");
+#if UNITY_2019_3_OR_NEWER
+		SceneManager.LoadScene("gallery");
+#else
+        Application.LoadLevel ("gallery");
+#endif
 	}
 	public void OnToBackboard(){
-		Application.LoadLevel ("blackboard");
+#if UNITY_2019_3_OR_NEWER
+		SceneManager.LoadScene("blackboard");
+#else
+        Application.LoadLevel ("blackboard");
+#endif
 	}
 
 }

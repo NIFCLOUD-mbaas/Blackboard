@@ -4,6 +4,9 @@ using System.IO;
 using System;
 using NCMB;
 using UnityEngine.UI;
+#if UNITY_2019_3_OR_NEWER
+using UnityEngine.SceneManagement;
+#endif
 
 public class SaveImage : MonoBehaviour{
 	public Camera camera;
@@ -39,7 +42,11 @@ public class SaveImage : MonoBehaviour{
 			} else {
 				//成功
 				Debug.Log("upload image success");
-				Application.LoadLevel("blackboard");
+#if UNITY_2019_3_OR_NEWER
+				SceneManager.LoadScene("blackboard");
+#else
+				Application.LoadLevel ("blackboard");
+#endif
 			}
 		});
 	}
