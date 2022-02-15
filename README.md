@@ -14,12 +14,13 @@
 ![画像2](https://github.com/natsumo/SwiftLoginApp/blob/master/readme-img/002.png)
 
 ## 動作環境
-* MacOS Mojave v10.15.6 (Catalina)
-* Simulator: Pixel 2 Android OS Version 10		 
-* Android studio: 4.0
-* LG V20 plus (OS 8.0)
-* Unity 2020.1.8f1
-* iphone 7 OS 14.0
+* MacOS Big Sur v11.6 (20G165)
+* Android Studio Arctic Fox (2020.3.1)
+* Android 12 (Simulator)
+* Xcode 13.0
+* Unity 2020.3.20f1 (LTS)
+* iPhone X 15.0.2
+* Unity SDK v4.4.1
 
 ※上記内容で動作確認をしています。
 
