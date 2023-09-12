@@ -14,13 +14,13 @@
 ![画像2](https://github.com/natsumo/SwiftLoginApp/blob/master/readme-img/002.png)
 
 ## 動作環境
-* MacOS Monterey version 12.5 
+* MacOS Ventura version 13.4.1
 * Android Studio Chipmunk | 2021.2.1 Patch 2
 * Pixle 2 - Android 13 (Simulator)
-* Xcode 13.0
-* Unity 2021.3.3f1 (LTS)
-* iPhone X 15.0.2
-* Unity SDK v4.4.1
+* Xcode 15.0
+* Unity 2022.2.19f1 (LTS)
+* iPhone SE 17.0.0
+* Unity SDK v5.1.1
 
 ※上記内容で動作確認をしています。
 
@@ -141,7 +141,7 @@ RenderTexture renderTexture;
 public void saveImage () {
 		float width = Screen.width;
 		float height = Screen.height;
-	
+
 		renderTexture = new RenderTexture (Screen.width, Screen.height, 0);
 		camera.targetTexture = renderTexture;
 		camera.Render ();
@@ -152,7 +152,7 @@ public void saveImage () {
 		// false, meaning no need for mipmaps
 		virtualPhoto.ReadPixels( new Rect(0, 0, width, height), 0, 0);
 
-		RenderTexture.active = null; //can help avoid errors 
+		RenderTexture.active = null; //can help avoid errors
 		camera.targetTexture = null;
 
 		byte[] bytes;
@@ -232,7 +232,7 @@ public void saveImage () {
 		texture.LoadImage (b);
 		Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
 		go.sprite = sprite;
-		Resources.UnloadUnusedAssets(); 
+		Resources.UnloadUnusedAssets();
 	}
 `````
 
